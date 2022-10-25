@@ -1,0 +1,66 @@
+<h1 mat-dialog-title>
+    {{labelForm}}
+</h1>
+<div mat-dialog-content>
+
+   <form [formGroup]="bookForm">
+
+    <mat-form-field appearance="outline">
+        <mat-label>إسم الكتاب </mat-label>
+        <input matInput formControlName ="bookName"  placeholder="إسم الكتاب">
+      </mat-form-field>
+      
+      <mat-form-field appearance="outline">
+        <mat-label> 
+          إسم المؤلف
+        </mat-label>
+        <input matInput formControlName ="authorName"  placeholder="إسم المؤلف ">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>التصنيف</mat-label>
+        <mat-select formControlName ="category">
+            <mat-option value ="فقه">فقه</mat-option>
+            <mat-option value ="قصص">قصص</mat-option>
+            <mat-option value ="أدب">أدب</mat-option>
+            <mat-option value ="تاريخ">تاريخ</mat-option>
+            <mat-option value ="السير الذاتية">السير الذاتية</mat-option>
+            <mat-option value ="إنجليزي">إنجليزي</mat-option>
+
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>تاريخ النشر</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName ="date" >
+        
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <label id="example-radio-group-label">الحالة</label>
+<mat-radio-group class="example-radio-group" formControlName ="status">
+ 
+  <mat-radio-button class="example-radio-button" *ngFor="let status of statusList" [value]="status">
+    {{status}}
+  </mat-radio-button>
+</mat-radio-group>
+
+<mat-form-field appearance="outline">
+    <mat-label>السعر</mat-label>
+    <input matInput formControlName ="price" type="number" placeholder="Price">
+  </mat-form-field>
+
+  
+
+   </form>
+   <br/>
+   <div mat-dialog-action [align]="'start'">
+    <button mat-raised-button color="warn" mat-dialog-close>إلغاء</button>
+    <button style="margin-right:8px ;" mat-raised-button color="primary" (click)="upsert()">{{actionBtn}}</button>
+    <br/>
+    <br/>
+</div>
+
+</div>
+

@@ -1,0 +1,79 @@
+{
+  "books": [
+    {
+      "bookName": "كليلة ودمنة",
+      "authorName": "الهندي بيدبا",
+      "category": "أدب",
+      "status": "جديد",
+      "price": 35,
+      "date": "2013-09-30T21:00:00.000Z",
+      "id": 1
+    },
+    {
+      "bookName": "‎همس الاشجار‎",
+      "authorName": "فيء موسى",
+      "category": "قصص",
+      "status": "جديد",
+      "price": 22,
+      "date": "2021-04-07T21:00:00.000Z",
+      "id": 2
+    },
+    {
+      "bookName": "نظرات في السيرة العاطرة",
+      "authorName": "أنس مراد الرهوان",
+      "category": "السير الذاتية",
+      "status": "جديد",
+      "price": 30,
+      "date": "2022-10-18T21:00:00.000Z",
+      "id": 3
+    },
+    {
+      "bookName": "Rich Dad Poor Dad",
+      "authorName": "‎Robert Kiyosaki",
+      "category": "إنجليزي",
+      "status": "مستعمل",
+      "price": 22,
+      "date": "2015-12-31T21:00:00.000Z",
+      "id": 4
+    }
+  ],
+  "productList": [
+    {
+      "productName": "orange",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 12,
+      "date": "2022-10-22T21:00:00.000Z",
+      "comment": "",
+      "id": 1
+    },
+    {
+      "productName": "Iphone 13",
+      "category": "Electronic",
+      "freshness": "Second Hand",
+      "price": 1000,
+      "date": "2022-10-09T21:00:00.000Z",
+      "comment": "Blue",
+      "id": 2
+    },
+    {
+      "productName": "Tomatto",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "price": 2,
+      "date": "2022-10-22T21:00:00.000Z",
+      "comment": "",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
